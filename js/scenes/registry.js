@@ -1,0 +1,36 @@
+// Central catalogue of every 3D module. The hub reads `catalog` to render cards;
+// the viewer lazy-imports the matching module by id.
+export const catalog = [
+  { id: 'meristem',    group: 'plant',  icon: '🌱', title: 'Meristematic Tissue',
+    subtitle: 'Dividing cells that grow the plant',
+    blurb: 'Watch small, undifferentiated cells divide and see apical, intercalary & lateral meristems on a growing plant.' },
+  { id: 'parenchyma',  group: 'plant',  icon: '🫧', title: 'Parenchyma',
+    subtitle: 'The living ground tissue',
+    blurb: 'Thin-walled rounded cells with big vacuoles — packing, storage and photosynthesis (chlorenchyma, aerenchyma).' },
+  { id: 'collenchyma', group: 'plant',  icon: '🧩', title: 'Collenchyma',
+    subtitle: 'Flexible corner-thickened support',
+    blurb: 'Living cells thickened at the corners with cellulose & pectin — bendable support for young stems.' },
+  { id: 'sclerenchyma',group: 'plant',  icon: '🪵', title: 'Sclerenchyma',
+    subtitle: 'Dead, lignified hard support',
+    blurb: 'Long fibres and stone cells (sclereids) with thick lignified walls — the plant’s girders.' },
+  { id: 'epidermis',   group: 'plant',  icon: '🍃', title: 'Epidermis & Stomata',
+    subtitle: 'Protective skin with breathing pores',
+    blurb: 'A one-cell-thick skin with a waxy cuticle; watch guard cells open and close a stoma.' },
+  { id: 'cork',        group: 'plant',  icon: '🟫', title: 'Cork (Phellem)',
+    subtitle: 'Dead waterproof bark cells',
+    blurb: 'Brick-like dead cells with waterproof suberin walls and lenticels for aeration.' },
+  { id: 'xylem',       group: 'plant',  icon: '💧', title: 'Xylem',
+    subtitle: 'Water-conducting pipes',
+    blurb: 'Tracheids and vessels with spiral/annular thickenings carry water up — watch the sap rise.' },
+  { id: 'phloem',      group: 'plant',  icon: '🍯', title: 'Phloem',
+    subtitle: 'Food-conducting sieve tubes',
+    blurb: 'Sieve tubes, companion cells and sieve plates transport sugary food — watch it flow.' },
+  { id: 'epithelium',  group: 'animal', icon: '🧬', title: 'Epithelial Tissue',
+    subtitle: 'The animal covering tissue',
+    blurb: 'Squamous, cuboidal and columnar sheets that cover and line the body; ciliated cells sweep in motion.' },
+  { id: 'overview',    group: 'intro',  icon: '✨', title: 'What is a Tissue?',
+    subtitle: 'From single cells to teamwork',
+    blurb: 'Scattered cells assemble into an organised tissue — division of labour in action.' },
+];
+
+export function byId(id) { return catalog.find(c => c.id === id); }

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tissues 3D — Class 9 Biology, Interactive Animations</title>
+  <meta name="description" content="Learn the Class 9 Biology chapter 'Tissues' through interactive, high-quality 3D animations and models.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧫</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <span class="kicker">🧫 Class 9 Biology · Chapter 2</span>
+    <h1>Tissues, in Interactive 3D</h1>
+    <p class="lead">Explore every plant and animal tissue from your chapter as a real-time 3D model with narrated animations. Drag to rotate, scroll to zoom, and watch the biology happen.</p>
+    <div class="meta">
+      <span class="chip"><b>10</b> 3D modules</span>
+      <span class="chip"><b>Plant</b> &amp; <b>Animal</b> tissues</span>
+      <span class="chip">Cell division · water &amp; food transport · stomata</span>
+      <span class="chip">Works in any browser</span>
+    </div>
+  </header>
+
+  <div class="section-head">
+    <h2>🌿 Plant Tissues</h2>
+    <span>Meristematic &amp; permanent</span>
+    <div class="rule"></div>
+  </div>
+  <main class="grid" id="grid-plant"></main>
+
+  <div class="section-head">
+    <h2>🐾 Animal Tissues</h2>
+    <span>Covering &amp; more</span>
+    <div class="rule"></div>
+  </div>
+  <main class="grid" id="grid-animal"></main>
+
+  <div class="section-head">
+    <h2>✨ Start Here</h2>
+    <span>The big idea</span>
+    <div class="rule"></div>
+  </div>
+  <main class="grid" id="grid-intro"></main>
+
+  <footer class="site">
+    Built from your uploaded <b>Tissues</b> chapter PDF. Each module is a procedurally-generated 3D
+    model rendered live with <b>Three.js</b> — no video files, fully interactive.
+    <br>Tip: press <b>Space</b> to play/pause an animation, and use the dropdown to jump between tissues.
+  </footer>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./js/vendor/three/three.module.js",
+      "three/addons/": "./js/vendor/three/addons/"
+    }
+  }
+  </script>
+  <script type="module" src="js/hub.js"></script>
+</body>
+</html>
